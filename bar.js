@@ -1,0 +1,10 @@
+var square = require('./square.js');
+var path = require('path');
+console.log('square', square().area(2));
+console.log(__dirname, __filename);
+console.log('path', path);
+father = path.resolve(__dirname, '..');
+fatherfile = path.resolve(__filename, '..');
+let ps = path.join(father, '/http.js');
+console.log('ps', ps);
+console.log('father', father, fatherfile);
